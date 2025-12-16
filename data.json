@@ -1,0 +1,185 @@
+{
+  "journalTitre": "Équitation & CCE",
+  "strap": "Concours Complet d'Équitation — dressage, cross, saut",
+  "brandMark": "assets/images/logo.svg",
+  "cta": {
+    "label": "Voir les concours",
+    "text": "Calendriers, coachings et préparations"
+  },
+  "articleprincipal": {
+    "titre": "Saison 2025 : le CCE monte en intensité",
+    "description": "Préparation des couples cheval/cavalier et exigences des terrains.",
+    "corps": "Gestion de l'effort, technicité des parcours et sécurité.",
+    "date": "3 Décembre 2025",
+    "theme": "Compétition",
+    "auteur": "Ameline",
+    "heroImage": "assets/texture/texture1.jpg",
+    "note": 4.8,
+    "vues": 12300,
+    "lecture": "8 min",
+    "tags": [
+      "CCE",
+      "dressage",
+      "cross",
+      "saut"
+    ]
+  },
+  "storyList": [
+    {
+      "titre": "Dressage : précision et connexion",
+      "description": "Figures imposées et fluidité.",
+      "corps": "Transitions, impulsion, rectitude.",
+      "date": "28 Novembre 2025",
+      "theme": "Dressage",
+      "auteur": "Rédaction",
+      "image": "assets/texture/texture2.png",
+      "note": 4.5,
+      "vues": 8300,
+      "lecture": "6 min",
+      "tags": [
+        "figures",
+        "transitions"
+      ]
+    },
+    {
+      "titre": "Cross-country : gestion de l'effort",
+      "description": "Allures, tracés, protections.",
+      "corps": "Reconnaissance et courbes.",
+      "date": "25 Novembre 2025",
+      "theme": "Cross",
+      "auteur": "Ameline",
+      "image": "assets/texture/texture3.jpg",
+      "note": 4.4,
+      "vues": 7900,
+      "lecture": "5 min",
+      "tags": [
+        "allures",
+        "sécurité"
+      ]
+    },
+    {
+      "titre": "Saut d'obstacles : tempo et trajectoires",
+      "description": "Abords, foulées, contrats.",
+      "corps": "Barres et profils.",
+      "date": "21 Novembre 2025",
+      "theme": "Saut",
+      "auteur": "Rédaction",
+      "image": "assets/texture/texture4.jpg",
+      "note": 4.6,
+      "vues": 9100,
+      "lecture": "6 min",
+      "tags": [
+        "contrats",
+        "abords"
+      ]
+    },
+    {
+      "titre": "Matériel : selle, embouchure, protections",
+      "description": "Adaptation au cheval.",
+      "corps": "Confort et efficacité.",
+      "date": "18 Novembre 2025",
+      "theme": "Matériel",
+      "auteur": "Ameline",
+      "image": "assets/texture/texture5.jpg",
+      "note": 4.3,
+      "vues": 6800,
+      "lecture": "5 min",
+      "tags": [
+        "selle",
+        "protections"
+      ]
+    },
+    {
+      "titre": "Préparation physique du cavalier",
+      "description": "Gainage et mobilité.",
+      "corps": "Programme hebdo.",
+      "date": "12 Novembre 2025",
+      "theme": "Préparation",
+      "auteur": "Rédaction",
+      "image": "assets/texture/texture6.jpg",
+      "note": 4.2,
+      "vues": 6200,
+      "lecture": "4 min",
+      "tags": [
+        "gainage",
+        "mobilité"
+      ]
+    }
+  ],
+  "topicCards": [
+    {
+      "nom": "Dressage",
+      "description": "Précision des figures.",
+      "icon": "🕊️",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#3B82F6"
+    },
+    {
+      "nom": "Cross",
+      "description": "Endurance et terrain.",
+      "icon": "🏞️",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#10B981"
+    },
+    {
+      "nom": "Saut",
+      "description": "Trajectoires et contrats.",
+      "icon": "🥇",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#F59E0B"
+    },
+    {
+      "nom": "Matériel",
+      "description": "Selles et protections.",
+      "icon": "🧰",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#8B5CF6"
+    },
+    {
+      "nom": "Cheval",
+      "description": "Alimentation et soins.",
+      "icon": "🐴",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#EF4444"
+    },
+    {
+      "nom": "Préparation",
+      "description": "Cavalier et mental.",
+      "icon": "🧠",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#6B7280"
+    }
+  ],
+  "contributors": [
+    {
+      "prenom": "Ameline",
+      "nom": "",
+      "typeExperience": "Cavalière CCE",
+      "presentation": "Dressage, cross et saut.",
+      "image": "assets/texture/texture7.jpg",
+      "email": "ameline@equitation.com",
+      "articles": 22,
+      "followers": 5100
+    },
+    {
+      "prenom": "Hugo",
+      "nom": "Martin",
+      "typeExperience": "Coach CCE",
+      "presentation": "Préparation et reconnaissance.",
+      "image": "assets/texture/texture7.jpg",
+      "email": "hugo@coachcce.fr",
+      "articles": 18,
+      "followers": 4300
+    },
+    {
+      "prenom": "Clara",
+      "nom": "Dubois",
+      "typeExperience": "Maréchale-ferrant",
+      "presentation": "Ferrures et prévention.",
+      "image": "assets/texture/texture7.jpg",
+      "email": "clara@forge-eq.fr",
+      "articles": 16,
+      "followers": 3900
+    }
+  ]
+}
