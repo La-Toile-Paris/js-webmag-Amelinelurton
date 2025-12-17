@@ -190,7 +190,7 @@ function getData() {
       });
       */
 
-      let articlesAffiches = []
+      let articlesAffiches = journal.storyList
 
       function setupThemeButtons() {
         document.querySelectorAll('.nav-theme-btn').forEach(button => {
@@ -241,12 +241,8 @@ function getData() {
       //mettre en action mes bouton crée vue notation
 
       buttonNotation.addEventListener("click",function() {
-          // Crée une copie triée du journal.storyList par note décroissante
           let trieDecroissantNote = trierParNoteDecroissant(articlesAffiches);
-
-          // Réinitialise l'affichage
           sectionArticles.innerHTML = '';
-
           // Affiche les articles triés
           trieDecroissantNote.forEach(afficherCardArticle);
       })
