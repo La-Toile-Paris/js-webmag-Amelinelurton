@@ -68,17 +68,20 @@ function getData() {
 
           //console.log(article);
 
-          let cardArticle = `<div class="article-card">
+          let cardArticle = `  <div class="article-card">
                 <img src="${article.image}" alt="image de ${article.titre}">
                 <div class="article-content">
                   <p class="theme-badge">${article.theme}</p>
                   <h3>${article.titre}</h3>
                   <p>${article.description}</p>
                   <p class="article-author">Par ${article.auteur} · ${article.date}</p>
+                  <div id="notevue">
                   <p>Noté : ${article.note}</p>
+                  <p>Vue : ${article.vues}</p>
+                  </div>
                   <button class="read-btn">LIRE L'ARTICLE</button>
                 </div>
-                </div>`
+                </div> `
           
           sectionArticles.innerHTML += cardArticle
       }
@@ -126,7 +129,7 @@ function getData() {
       //console.log(auteur);
 
       let cardAuteur = `<div class="author-card">
-               <img src="${auteur.image}" alt="image de ${auteur.prenom} ${auteur.nom}">
+               <img class="author-image" src="${auteur.image}" alt="image de ${auteur.prenom} ${auteur.nom}">
                <h3>${auteur.prenom} ${auteur.nom}</h3>
                <p class="author-role">${auteur.typeExperience}</p>
                <p class="author-bio">${auteur.presentation}</p>
@@ -201,7 +204,6 @@ function getData() {
                 Sinon, filtre journal.storyList pour ne garder que les articles dont le theme correspond */
             sectionArticles.innerHTML = ''
 
-            let articlesTries = trierParNoteDecroissant(filtered);
             articlesTries.forEach(afficherCardArticle);
 
           });
@@ -213,10 +215,18 @@ function getData() {
 
       // Classer les articles par popularité ou notation
 
+
+      let buttonClassement =document.getElementById("button-triage")
+
+      buttonClassement.innerHTML =`<button class="nav-theme-btn">↕ Notation</button>
+      <button class="nav-theme-btn">↕ visionnage</button>`
+
       function trierParNoteDecroissant(tableau) {
         return tableau.sort((a, b) => b.note - a.note);
       }
       //Pour un classement décroissant en JavaScript, utilise la méthode sort() avec une fonction de comparaison qui soustrait a de b → b - a.
+
+      //mettre en action mes bouton crée vue notation
 
 
 

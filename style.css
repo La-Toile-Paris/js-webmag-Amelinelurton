@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Racing+Sans+One&display=swap');
+
 /* CSS VARIABLES */
 :root {
    /* Colors */
-   --color-primary: #2a2a2a;
-   --color-secondary: #666;
-   --color-white: #fff;
+   --color-primary: #095102;
+   --color-secondary: #0f9004;
+   --color-white: #f4fcf4;
    
    /* Backgrounds */
-   --bg-light: #f5f5f5;
-   --bg-lighter: #ddd;
+   --bg-light: #e9fded;
+   --bg-lighter: #bffcc9;
    
    /* Text */
    --text-dark: #2a2a2a;
@@ -24,7 +26,7 @@
    --text-base: 1rem;
    --text-lg: 1.3rem;
    --text-xl: 2rem;
-   --text-xxl: 2.5rem;
+   --text-xxl: 5rem;
    
    /* Other */
    --transition: 0.3s ease;
@@ -33,6 +35,11 @@
 }
 
 /* RESET & BASE */
+
+/*importation font police */
+/*h1*/
+
+
 * {
    margin: 0;
    padding: 0;
@@ -69,6 +76,7 @@ h1 {
    font-size: var(--text-xxl);
    margin-bottom: var(--space-sm);
    color: var(--text-dark);
+   font-family: 'Contrail One';
 }
 
 h2 {
@@ -316,6 +324,18 @@ p {
    background-color: var(--color-primary);
 }
 
+#notevue{
+   display: flex;
+   justify-content: space-between;
+}
+
+#button-triage {
+   gap: 5px;
+   display: flex;
+   justify-content: flex-end;
+   padding: 10px;
+}
+
 /* THEMES SECTION */
 .themes-section {
    padding: var(--space-lg) 0;
@@ -378,9 +398,9 @@ p {
 }
 
 .author-image {
-   width: 150px;
-   height: 150px;
-   border-radius: 50%;
+   width: 90vh;
+   height: 50vh;
+   border-radius: 3%;
    object-fit: cover;
    margin: 0 auto var(--space-md);
    border: 3px solid var(--bg-lighter);
