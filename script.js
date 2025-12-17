@@ -204,7 +204,7 @@ function getData() {
                 Sinon, filtre journal.storyList pour ne garder que les articles dont le theme correspond */
             sectionArticles.innerHTML = ''
 
-            articlesTries.forEach(afficherCardArticle);
+            filtered.forEach(afficherCardArticle);
 
           });
         });
@@ -218,15 +218,39 @@ function getData() {
 
       let buttonClassement =document.getElementById("button-triage")
 
-      buttonClassement.innerHTML =`<button class="nav-theme-btn">↕ Notation</button>
-      <button class="nav-theme-btn">↕ visionnage</button>`
+      buttonClassement.innerHTML =`<button id="buttonnotation" class="nav-theme-btn">↕ Notation</button>
+      <button id="buttonvisonnage" class="nav-theme-btn">↕ visionnage</button>`
+
+      let buttonNotation =document.getElementById("buttonnotation")
+      let buttonVue =document.getElementById("buttonvisonnage")
 
       function trierParNoteDecroissant(tableau) {
         return tableau.sort((a, b) => b.note - a.note);
       }
       //Pour un classement décroissant en JavaScript, utilise la méthode sort() avec une fonction de comparaison qui soustrait a de b → b - a.
+      function trierParVueDecroissant(tableau) {
+        return tableau.sort((a, b) => b.vues - a.vues);
+      }
 
       //mettre en action mes bouton crée vue notation
+
+      buttonNotation.addEventListener("click",function() {
+          // Crée une copie triée du journal.storyList par note décroissante
+          let trieDecroissantNote = trierParNoteDecroissant([...journal.storyList]);
+
+          // Réinitialise l'affichage
+          sectionArticles.innerHTML = '';
+
+          // Affiche les articles triés
+          trieDecroissantNote.forEach(afficherCardArticle);
+      })
+
+      buttonVue.addEventListener("click",function(){
+        let trieDecroissantVue = trierParVueDecroissant([...journal.storyList]);
+        sectionArticles.innerHTML ="";
+        trieDecroissantVue.forEach(afficherCardArticle);
+      })
+
 
 
 
