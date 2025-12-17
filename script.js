@@ -224,8 +224,8 @@ function getData() {
 
       let buttonClassement =document.getElementById("button-triage")
 
-      buttonClassement.innerHTML =`<button id="buttonnotation" class="nav-theme-btn">↕ Notation</button>
-      <button id="buttonvisonnage" class="nav-theme-btn">↕ visionnage</button>`
+      buttonClassement.innerHTML =`<button id="buttonnotation" class="nav-theme-btn">⇩ Notation</button>
+      <button id="buttonvisonnage" class="nav-theme-btn">⇩ visionnage</button>`
 
       let buttonNotation =document.getElementById("buttonnotation")
       let buttonVue =document.getElementById("buttonvisonnage")
