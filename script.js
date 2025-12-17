@@ -20,16 +20,16 @@ function getData() {
 
       // TODO 2: REMPLIR LA NAVIGATION
 
-      function buttonPourNav(card) {
-        
-        let navigation = document.getElementById("themes-nav")
+      let navigation = document.getElementById("themes-nav")
 
+      navigation.innerHTML = `<button class="nav-theme-btn" id="buttonTous">Tous</button>`;
+
+      function buttonPourNav(card) {
         //let titreNav= journal.topicCards[0].nom
 
-         let buttonNav = `<button class="nav-theme-btn">${card.icon} ${card.nom}</button>`;
+         let buttonNav = `<button class="nav-theme-btn" id="button${card.nom}">${card.icon} ${card.nom}</button>`;
          navigation.innerHTML += buttonNav;
       }
-
 
       function afficherTousLesButtonNav(data) {
           data.topicCards.forEach(card => {
@@ -75,6 +75,7 @@ function getData() {
                   <h3>${article.titre}</h3>
                   <p>${article.description}</p>
                   <p class="article-author">Par ${article.auteur} · ${article.date}</p>
+                  <p>Noté : ${article.note}</p>
                   <button class="read-btn">LIRE L'ARTICLE</button>
                 </div>
                 </div>`
@@ -152,6 +153,70 @@ function getData() {
       
       callToAction.innerHTML = htmlCallToAction
       
+       // BONUS: 
+      // Alert quand on appuie sur le bouton CTA
+      let  buttonAction = document.getElementById("call-to-action")
+
+      buttonAction.addEventListener("click", function(){
+      alert("Le weekend prochain CCE internationnal à Pompadour");   
+      })
+
+      // Fonction de filtrage par thème
+
+      /*
+      let buttonDressage = document.getElementById("buttonDressage")
+      let buttonCross = document.getElementById("buttonCross")
+      let buttonSaut = document.getElementById("buttonSaut")
+      let buttonMateriel = document.getElementById("buttonMateriel")
+      let buttonCheval = document.getElementById("buttonCheval")
+      let buttonPreparation = document.getElementById("buttonPreparation")
+      let buttonTous = document.getElementById("buttonTous")
+
+      console.log(buttonDressage);
+
+      
+      buttonDressage.addEventListener("click", function(){
+        sectionArticles.innerHTML = "";
+          
+        let filteredArticlesDressage = journal.storyList.filter(article => article.theme === "Dressage");  
+
+        filteredArticlesDressage.forEach(article => {
+          afficherCardArticle(article);
+        });
+
+      });
+      */
+
+      function setupThemeButtons() {
+        document.querySelectorAll('.nav-theme-btn').forEach(button => {
+          //Sélectionne tous les éléments avec la classe nav-theme-btn (les boutons de thème) et parcourt chacun d’eux.
+          button.addEventListener('click', function() {
+            let theme = this.id.replace('button', '');
+            //Récupère l’id du bouton cliqué (ex: buttonDressage) et remplace button par une chaîne vide → donne Dressage.
+            let filtered = theme === 'Tous' 
+              ? journal.storyList 
+              : journal.storyList.filter(a => a.theme === theme);
+              /*Utilise l’opérateur ternaire :
+                Si le thème est 'Tous', prend tous les articles.
+                Sinon, filtre journal.storyList pour ne garder que les articles dont le theme correspond */
+            sectionArticles.innerHTML = ''
+
+            let articlesTries = trierParNoteDecroissant(filtered);
+            articlesTries.forEach(afficherCardArticle);
+
+          });
+        });
+      }
+      setupThemeButtons()
+
+
+
+      // Classer les articles par popularité ou notation
+
+      function trierParNoteDecroissant(tableau) {
+        return tableau.sort((a, b) => b.note - a.note);
+      }
+      //Pour un classement décroissant en JavaScript, utilise la méthode sort() avec une fonction de comparaison qui soustrait a de b → b - a.
 
 
 
@@ -162,8 +227,5 @@ function getData() {
  
  getData();
 
- // BONUS: 
- // Alert quand on appuie sur le bouton CTA
- // Fonction de filtrage par thème
- // Classer les articles par popularité ou notation
+
  
