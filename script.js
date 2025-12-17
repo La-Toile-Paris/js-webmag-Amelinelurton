@@ -190,6 +190,8 @@ function getData() {
       });
       */
 
+      let articlesAffiches = []
+
       function setupThemeButtons() {
         document.querySelectorAll('.nav-theme-btn').forEach(button => {
           //Sélectionne tous les éléments avec la classe nav-theme-btn (les boutons de thème) et parcourt chacun d’eux.
@@ -204,12 +206,16 @@ function getData() {
                 Sinon, filtre journal.storyList pour ne garder que les articles dont le theme correspond */
             sectionArticles.innerHTML = ''
 
+            articlesAffiches = filtered;
+
             filtered.forEach(afficherCardArticle);
 
           });
         });
       }
       setupThemeButtons()
+
+      
 
 
 
@@ -236,7 +242,7 @@ function getData() {
 
       buttonNotation.addEventListener("click",function() {
           // Crée une copie triée du journal.storyList par note décroissante
-          let trieDecroissantNote = trierParNoteDecroissant([...journal.storyList]);
+          let trieDecroissantNote = trierParNoteDecroissant(articlesAffiches);
 
           // Réinitialise l'affichage
           sectionArticles.innerHTML = '';
@@ -246,9 +252,9 @@ function getData() {
       })
 
       buttonVue.addEventListener("click",function(){
-        let trieDecroissantVue = trierParVueDecroissant([...journal.storyList]);
-        sectionArticles.innerHTML ="";
-        trieDecroissantVue.forEach(afficherCardArticle);
+        let trieDecroissantVue = trierParVueDecroissant(articlesAffiches);
+        sectionArticles.innerHTML = '';
+        trieDecroissantVue.forEach(afficherCardArticle)
       })
 
 

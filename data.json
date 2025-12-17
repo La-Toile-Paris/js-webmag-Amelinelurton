@@ -104,6 +104,118 @@
         "gainage",
         "mobilité"
       ]
+    },
+    {
+      "titre": "Dressage : la cession latérale au pas",
+      "description": "Travail de souplesse et de désunissement.",
+      "corps": "Exécution, impulsion et cession progressive.",
+      "date": "15 Novembre 2025",
+      "theme": "Dressage",
+      "auteur": "Hugo Martin",
+      "image": "assets/images/lesarticles/Images de Equitation.jpg",
+      "note": 4.7,
+      "vues": 8900,
+      "lecture": "6 min",
+      "tags": [
+        "cession",
+        "souplesse"
+      ]
+    },
+    {
+      "titre": "Les différents types d'obstacles en CSO",
+      "description": "Vertical, oxer, spa et enchaînements.",
+      "corps": "Caractéristiques et techniques pour aborder chaque obstacle avec succès.",
+      "date": "3 Décembre 2025",
+      "theme": "Saut",
+      "auteur": "Rédaction",
+      "image": "assets/images/lesarticles/Equitation image de Valerie Semenova.jpg",
+      "note": 4.5,
+      "vues": 8600,
+      "lecture": "6 min",
+      "tags": [
+        "vertical",
+        "oxer"
+      ]
+    },
+    {
+      "titre": "Cross : gérer la vitesse et les foulées",
+      "description": "Calculs, distances, précision.",
+      "corps": "Appréhender les tracés, ajuster l'allure, anticiper les obstacles.",
+      "date": "14 Décembre 2025",
+      "theme": "Cross",
+      "auteur": "Hugo Martin",
+      "image": "assets/images/lesarticles/Cso Obstacle Equitation.jpg",
+      "note": 4.8,
+      "vues": 9400,
+      "lecture": "7 min",
+      "tags": [
+        "vitesse",
+        "foulées"
+      ]
+    },
+    {
+      "titre": "Yoga et CCE : souplesse mentale et stabilité physique",
+      "description": "Améliorer son équilibre, sa respiration et sa concentration.",
+      "corps": "Le yoga renforce la connexion corps-esprit, essentielle en Concours Complet. Il améliore l'alignement postural, la mobilité du bassin et la gestion du stress. Des séances régulières aident à rester centré avant le cross, à respirer profondément en dressage et à garder une assiette fluide en saut. Des postures comme l'enfant ou le pigeon libèrent les tensions musculaires, tandis que la méditation renforce la concentration et la confiance.",
+      "date": "15 Décembre 2025",
+      "theme": "Préparation",
+      "auteur": "Clara Dubois",
+      "image": "assets/images/lesarticles/Yoga Photo Pexels.jpg",
+      "note": 4.6,
+      "vues": 8200,
+      "lecture": "6 min",
+      "tags": [
+        "yoga",
+        "concentration"
+      ]
+    },
+    {
+      "titre": "Anglo-arabe : élégance, endurance et polyvalence",
+      "description": "Le croisement parfait entre le Pur-sang et l'Arabe.",
+      "corps": "Originaire du Sud-Ouest de la France, l'anglo-arabe est le fruit d'un croisement entre le Pur-sang anglais et le cheval arabe, développé dès le XIXᵉ siècle. Robuste et endurant, il allie puissance, vitesse et résistance, ce qui en fait un excellent cheval de sport. De taille moyenne (1,58 à 1,65 m), il possède un tempérament vif mais courageux, idéal pour le concours complet, le saut d'obstacles ou le dressage. Sa robe est souvent bai, alezan ou grise, et son ossature fine mais solide lui confère une grande élégance. Très polyvalent, il excelle aussi en loisir et en randonnée. Reconnu pour son influx nerveux et sa volonté, il demande une main expérimentée mais récompense par sa fidélité et ses performances.",
+      "date": "17 Décembre 2025",
+      "theme": "Cheval",
+      "auteur": "Rédaction",
+      "image": "assets/images/lesarticles/Cheval Pexels.jpg",
+      "note": 4.7,
+      "vues": 8800,
+      "lecture": "7 min",
+      "tags": [
+        "anglo-arabe",
+        "polyvalence"
+      ]
+    },
+    {
+      "titre": "Protections en CCE : sécuriser le cheval sur les trois épreuves",
+      "description": "Choisir les bons équipements pour chaque phase du complet.",
+      "corps": "En Concours Complet d'Équitation (CCE), les protections du cheval sont essentielles pour prévenir les blessures, surtout en cross. En dressage, les guêtres ou cloches légères protègent des frottements lors des figures complexes. En CSO, on privilégie des protections souples ou rigides selon le terrain, pour éviter les chocs aux jarrets ou boulets. En cross, l’usage de guêtres de cross fermées est fortement recommandé : elles offrent une protection maximale contre les chocs, les pierres et les obstacles. Les protège-jarrets rigides et les protège-carpes sont aussi utilisés pour les terrains accidentés. En transport, bandes de repos ou protections de membres limitent les traumatismes. Le choix dépend du niveau, du terrain et du tempérament du cheval, mais la sécurité reste la priorité.",
+      "date": "17 Décembre 2025",
+      "theme": "Matériel",
+      "auteur": "Améline",
+      "image": "assets/images/lesarticles/Cheval Guetre Pexels.jpg",
+      "note": 4.5,
+      "vues": 8000,
+      "lecture": "6 min",
+      "tags": [
+        "protections",
+        "cross"
+      ]
+    },
+    {
+      "titre": "Nutrition du cheval : équilibre alimentaire pour la performance",
+      "description": "Fourrage, compléments et besoins selon l’effort.",
+      "corps": "Une alimentation équilibrée repose sur une base de fourrage (foin, paille, ensilage) représentant au moins 60 % de la ration. Le cheval sportif a besoin de compléments énergétiques (céréales, granulés) adaptés à son niveau d’activité. En CCE, la gestion de l’hydratation et des électrolytes est cruciale, surtout en cross. Les vitamines (A, D, E) et minéraux (calcium, phosphore, magnésium) doivent être dosés précisément pour éviter les carences ou excès. Des compléments comme la levure de bière ou les oméga-3 améliorent la santé digestive et la robe. Il est essentiel de fractionner les repas (2 à 3 par jour) et d’assurer un accès constant à l’eau propre. Un déséquilibre alimentaire peut entraîner coliques, fourbures ou baisse de performance.",
+      "date": "17 Décembre 2025",
+      "theme": "Cheval",
+      "auteur": "Clara Dubois",
+      "image": "assets/images/lesarticles/Foin Pexels.jpg",
+      "note": 4.8,
+      "vues": 9100,
+      "lecture": "8 min",
+      "tags": [
+        "nutrition",
+        "fourrage"
+      ]
     }
     
   ],
